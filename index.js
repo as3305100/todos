@@ -20,7 +20,8 @@ async function main() {
 
 server.use(cors())
 server.use(express.json())
-server.use(express.static(path.join(__dirname, process.env.PUBLIC_DIR)))
+// server.use(express.static(path.join(__dirname, process.env.PUBLIC_DIR)))
+server.use(express.static('dist'))
 server.use(express.urlencoded({extended: true}))
 server.use('/todos', router)
 
