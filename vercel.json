@@ -13,7 +13,7 @@
     "routes": [
       {
         "src": "/todos",
-        "use": "index.js"
+        "dest": "index.js"
       }, 
       {
         "src": "/todos/(.*)",
@@ -21,7 +21,7 @@
       },
       {
        "src": "/",
-        "use": "public/index.html" 
+        "dest": "public/index.html" 
       }
     ]
   } 
