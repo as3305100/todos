@@ -97,6 +97,6 @@ server.patch('/:id', async (req, res) => {
 
 
 
-server.listen(process.env.PORT, () => {
+server.listen(8000, () => {
     console.log('Server is running on port 8000')
 })
